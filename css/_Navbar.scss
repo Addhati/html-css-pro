@@ -1,0 +1,18 @@
+.Navbar {
+  background-color: #222222;
+  height: 75px;
+  @include mainPadding();
+  @include flex(row, space-between);
+
+  &-Block {
+    @include flex();
+  }
+
+  &-Icon {
+    margin-left: 32px;
+  }
+}
+
+.Logo {
+  width: 44px;
+}

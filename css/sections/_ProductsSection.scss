@@ -1,0 +1,50 @@
+.ProductsSection {
+  margin-top: 95px;
+  margin-bottom: 95px;
+  @include mainPadding();
+  @include flex(column);
+
+  &-Header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &-Products {
+    @include flex(row, space-between);
+  }
+
+  .ProductCard {
+    width: 31.5%;
+    margin-top: 30px;
+    background-color: #F8F8F8;
+
+    &-Img {
+      object-fit: contain;
+    }
+
+    &-H5, &-Text {
+      margin-left: 15px;
+      margin-right: 20px;
+    }
+
+    &-H5 {
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    &-H5_pink {
+      color: $brandColor;
+    }
+  }
+
+  &-Btn {
+    width: 211px;
+    height: 47px;
+    background-color: transparent;
+    border: 2px solid #FF6A6A;
+    color: #F26376;
+    align-self: center;
+    margin: 45px auto 0;
+  }
+
+}
