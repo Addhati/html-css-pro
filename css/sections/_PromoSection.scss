@@ -20,4 +20,11 @@
     border-left: 12px solid $brandColor;
     @include flex(column, center, flex-start);
   }
+
+  &-H2 {
+    display:block;
+    &_pink {
+      color: #F16D7F;
+    }
+  }
 }

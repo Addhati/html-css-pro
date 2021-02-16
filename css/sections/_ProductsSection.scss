@@ -22,17 +22,17 @@
       object-fit: contain;
     }
 
-    &-H5, &-Text {
+    &-H6, &-Text {
       margin-left: 15px;
       margin-right: 20px;
     }
 
-    &-H5 {
+    &-H6 {
       margin-top: 25px;
       margin-bottom: 15px;
     }
 
-    &-H5_pink {
+    &-H6_pink {
       color: $brandColor;
     }
   }
@@ -45,6 +45,7 @@
     color: #F26376;
     align-self: center;
     margin: 45px auto 0;
+    cursor: pointer;
   }
 
 }
