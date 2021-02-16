@@ -1,0 +1,23 @@
+.PromoSection {
+  height: 764px;
+  background-color: #F1E4E6;
+  @include mainPadding();
+  @include flex();
+
+  &-Block {
+    height: 100%;
+    width: 50%;
+    @include flex();
+  }
+
+  &-Block_left {
+    justify-content: start;
+  }
+
+  &-Hgroup {
+    padding-left: 19px;
+    height: 92px;
+    border-left: 12px solid $brandColor;
+    @include flex(column, center, flex-start);
+  }
+}

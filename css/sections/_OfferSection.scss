@@ -1,0 +1,36 @@
+.OfferSection {
+  @include mainPadding();
+  @include flex(row, space-between);
+  margin-top: 65px;
+
+  &-Card {
+    width: 30%;
+    height: 260px;
+    text-align: center;
+    @include flex(column);
+    color: white;
+  }
+
+  &-H4 {
+    color: $brandColor;
+  }
+
+  &-Card_woman {
+    background-image: url(../img/offer-woman.jpg);
+  }
+
+  &-Card_man {
+    background-image: url(../img/offer-man.jpg);
+  }
+
+  &-Card_child {
+    background-image: url(../img/offer-child.jpg);
+  }
+
+  &-Card_accessories{
+    background-image: url(../img/offer-accessories.jpg);
+    width: 100%;
+    margin-top: 30px;
+  }
+
+}
