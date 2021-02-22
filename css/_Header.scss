@@ -1,0 +1,38 @@
+.Header {
+  background-color: #222222;
+  height: 75px;
+  @include mainPadding();
+  @include flex(row, space-between);
+
+  &-Block {
+    @include flex();
+  }
+
+  &-Icon {
+    margin-left: 32px;
+  }
+
+  .Cart {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      border-radius: 50%;
+      color: white;
+      content: '5';
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid red;
+      background: #F16D7F;
+      text-align: center;
+    }
+  }
+}
+
+.Logo {
+  width: 44px;
+}
+
+

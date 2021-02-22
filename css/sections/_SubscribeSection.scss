@@ -1,0 +1,58 @@
+.SubscribeSection {
+  height: 448px;
+  background-image: url(../img/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mainPadding();
+  @include flex(row, space-between);
+
+  &-Block {
+    @include flex(column);
+    width: 30%;
+  }
+
+  .ReviewCard {
+    &-Text {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  .SubscribeBlock {
+    width: 45%;
+
+    &-H4 {
+    }
+
+    &-Input {
+      height: 50px;
+      width: 260px;
+      margin-top: 30px;
+      padding-left: 20px;
+      border: none;
+      background-color: #E1E1E1;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      outline: none;
+
+      &:focus {
+        border: none;
+      }
+
+      &::placeholder {
+        color: grey;
+      }
+    }
+
+    &-Btn {
+      height: 50px;
+      width: 100px;
+      border: none;
+      background-color: #F16D7F;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

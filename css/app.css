@@ -11,6 +11,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -56,6 +57,12 @@ html {
 
 .H5 {
   font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.H6 {
+  font-weight: 400;
   font-size: 16px;
   line-height: 25px;
 }
@@ -71,7 +78,7 @@ html {
   width: 29px;
 }
 
-.Navbar {
+.Header {
   background-color: #222222;
   height: 75px;
   padding: 0 calc(50% - 1140px / 2);
@@ -81,19 +88,77 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
-.Navbar-Block {
+.Header-Block {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.Navbar-Icon {
+.Header-Icon {
   margin-left: 32px;
+}
+.Header .Cart {
+  position: relative;
+}
+.Header .Cart::after {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  color: white;
+  content: "5";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  background: #F16D7F;
+  text-align: center;
 }
 
 .Logo {
   width: 44px;
+}
+
+.Footer {
+  height: 80px;
+  background-color: #222224;
+  padding: 0 calc(50% - 1140px / 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Footer-Copyright {
+  color: white;
+}
+.Footer-Block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Footer .SocialIcon {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+}
+.Footer .SocialIcon:hover {
+  background-color: #F16D7F;
+}
+.Footer .SocialIcon:hover .SocialIcon-Img {
+  fill: white;
+}
+.Footer .SocialIcon-Img {
+  height: 50%;
 }
 
 .PromoSection {
@@ -127,6 +192,12 @@ html {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+.PromoSection-H2 {
+  display: block;
+}
+.PromoSection-H2_pink {
+  color: #F16D7F;
 }
 
 .OfferSection {
@@ -196,15 +267,15 @@ html {
 .ProductsSection .ProductCard-Img {
   object-fit: contain;
 }
-.ProductsSection .ProductCard-H5, .ProductsSection .ProductCard-Text {
+.ProductsSection .ProductCard-H6, .ProductsSection .ProductCard-Text {
   margin-left: 15px;
   margin-right: 20px;
 }
-.ProductsSection .ProductCard-H5 {
+.ProductsSection .ProductCard-H6 {
   margin-top: 25px;
   margin-bottom: 15px;
 }
-.ProductsSection .ProductCard-H5_pink {
+.ProductsSection .ProductCard-H6_pink {
   color: #F16D7F;
 }
 .ProductsSection-Btn {
@@ -215,6 +286,99 @@ html {
   color: #F26376;
   align-self: center;
   margin: 45px auto 0;
+  cursor: pointer;
+}
+
+.FeatureSection {
+  height: 341px;
+  background-color: #222224;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 calc(50% - 1140px / 2);
+}
+.FeatureSection-Block {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.FeatureSection-Icon {
+  width: 44px;
+  fill: #F16D7F;
+}
+.FeatureSection-Icon_sale {
+  width: 40px;
+}
+.FeatureSection-Icon_quality {
+  width: 47px;
+}
+.FeatureSection-H5 {
+  color: white;
+  margin: 30px 0 16px;
+}
+.FeatureSection-Text {
+  color: white;
+  text-align: center;
+}
+
+.SubscribeSection {
+  height: 448px;
+  background-image: url(../img/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 calc(50% - 1140px / 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.SubscribeSection-Block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.SubscribeSection .ReviewCard-Text {
+  text-align: center;
+  margin-top: 30px;
+}
+.SubscribeSection .SubscribeBlock {
+  width: 45%;
+}
+.SubscribeSection .SubscribeBlock-Input {
+  height: 50px;
+  width: 260px;
+  margin-top: 30px;
+  padding-left: 20px;
+  border: none;
+  background-color: #E1E1E1;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  outline: none;
+}
+.SubscribeSection .SubscribeBlock-Input:focus {
+  border: none;
+}
+.SubscribeSection .SubscribeBlock-Input::placeholder {
+  color: grey;
+}
+.SubscribeSection .SubscribeBlock-Btn {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: #F16D7F;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
