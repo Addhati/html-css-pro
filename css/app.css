@@ -25,6 +25,14 @@ dd {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #F16D7F;
+}
+
 html {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -161,6 +169,113 @@ html {
   height: 50%;
 }
 
+.Breadcrumbs {
+  padding: 0 calc(50% - 1140px / 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 150px;
+  background-color: #F8F3F4;
+}
+.Breadcrumbs-H4 {
+  color: #F16D7F;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.Breadcrumbs-Link {
+  text-transform: uppercase;
+}
+.Breadcrumbs-Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Breadcrumbs-NavCurrentPage {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.MainFilter {
+  width: 31.5%;
+  text-align: left;
+}
+.MainFilter-Heading {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.MainFilter-ToggleIcon {
+  margin-left: 11px;
+}
+.MainFilter-IconImg {
+  width: 15px;
+}
+.MainFilter-Items {
+  display: none;
+}
+
+.SortFilter {
+  width: 31.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  margin-left: 30px;
+}
+.SortFilter-Block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.SortFilter-Icon {
+  display: block;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.SortFilter-IconImg {
+  width: 10px;
+}
+
+.Pagination {
+  padding: 16px;
+  border: 1px solid #EBEBEB;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.Pagination-Pages {
+  margin: 0 20px;
+}
+.Pagination-Page {
+  font-size: 16px;
+  color: #C4C4C4;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.Pagination-Page_active {
+  color: #EF5B70;
+}
+.Pagination-IconImg {
+  height: 14px;
+  cursor: pointer;
+}
+
 .PromoSection {
   height: 764px;
   background-color: #F1E4E6;
@@ -252,12 +367,21 @@ html {
   text-align: center;
   margin-bottom: 15px;
 }
+.ProductsSection-Header_catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .ProductsSection-Products {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .ProductsSection .ProductCard {
   width: 31.5%;

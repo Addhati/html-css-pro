@@ -4,13 +4,21 @@
   @include mainPadding();
   @include flex(column);
 
+
   &-Header {
     text-align: center;
     margin-bottom: 15px;
+
+    &_catalog {
+      @include flex(row, space-between);
+      width: 100%;
+
+    }
   }
 
   &-Products {
     @include flex(row, space-between);
+    width: 100%;
   }
 
   .ProductCard {

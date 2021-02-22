@@ -1,0 +1,27 @@
+.Pagination {
+  padding: 16px;
+  border: 1px solid #EBEBEB;
+  @include flex(row);
+  margin-top: 60px;
+
+  &-Pages {
+    margin: 0 20px;
+  }
+
+  &-Page {
+    font-size: 16px;
+    color: #C4C4C4;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &_active {
+      color: #EF5B70;
+    }
+  }
+
+
+  &-IconImg {
+    height: 14px;
+    cursor: pointer;
+  }
+}

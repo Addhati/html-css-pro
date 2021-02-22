@@ -1,0 +1,22 @@
+.SortFilter {
+  width: 31.5%;
+  @include flex(row, start, center, nowrap);
+  flex-grow: 1;
+  margin-left: 30px;
+
+  &-Block {
+    @include flex(row);
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  &-Icon {
+    display: block;
+    margin-left: 10px;
+    @include flex();
+  }
+
+  &-IconImg {
+    width: 10px;
+  }
+}
