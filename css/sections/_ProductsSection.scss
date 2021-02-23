@@ -46,6 +46,7 @@
   }
 
   &-Btn {
+    display: block;
     width: 211px;
     height: 47px;
     background-color: transparent;
@@ -53,7 +54,8 @@
     color: #F26376;
     align-self: center;
     margin: 45px auto 0;
-    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
   }
 
 }

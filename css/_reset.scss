@@ -32,3 +32,9 @@ a {
     color: #F16D7F;
   }
 }
+
+
+ul[class],
+ol[class] {
+  list-style-type: none;
+}
