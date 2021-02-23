@@ -1,0 +1,21 @@
+.MainFilter {
+  width: 31.5%;
+  text-align: left;
+
+  &-Heading {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &-ToggleIcon {
+    margin-left: 11px;
+  }
+
+  &-IconImg {
+    width: 15px;
+  }
+
+  &-Items {
+    display: none;
+  }
+}

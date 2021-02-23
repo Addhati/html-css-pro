@@ -1,0 +1,25 @@
+.Breadcrumbs {
+  @include mainPadding();
+  @include flex(row, space-between);
+  height: 150px;
+  background-color: #F8F3F4;
+
+  &-H4 {
+    color: #F16D7F;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &-Link {
+    text-transform: uppercase;
+  }
+
+  &-Nav {
+    @include flex();
+  }
+
+  &-NavCurrentPage {
+    font-weight: 700;
+    color: #F16D7F;
+  }
+}
