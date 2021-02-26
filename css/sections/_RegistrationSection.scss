@@ -1,0 +1,27 @@
+.RegistrationSection {
+  @include mainPadding();
+  @include flex(row, space-between, start);
+  padding-top: 65px;
+  padding-bottom: 95px;
+
+  .BonusesArticle {
+    width: 55%;
+  }
+
+  .BonusesArticle-H4, .BonusesArticle-Text, .BonusesArticle-List {
+    font-weight: 300;
+  }
+
+  .BonusesArticle-Text {
+    margin: 20px 0;
+  }
+
+  .BonusesArticle-ListIcon {
+    width: 20px;
+    margin-right: 20px;
+  }
+
+  .BonusesArticle-List {
+    margin-bottom: 15px;
+  }
+}
