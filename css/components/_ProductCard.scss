@@ -1,0 +1,77 @@
+.ProductCard {
+  width: 31.5%;
+  margin-top: 30px;
+  background-color: #F8F8F8;
+  position: relative;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &-Img {
+    object-fit: contain;
+    transition: filter .3s;
+  }
+
+  &:hover &-Img {
+    filter: brightness(50%);
+  }
+
+  &-H6, &-Text {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+  &-H6 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  &-H6_pink {
+    color: $brandColor;
+  }
+
+  &-Icon {
+    width: 25px;
+    margin-right: 1rem;
+    transition: all 0.3s;
+  }
+
+  &-Btn {
+    border: 1px solid white;
+    width: 140px;
+    height: 45px;
+    font-weight: 400;
+    @include flex(row);
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 140px/2);
+    background: transparent;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      color: white;
+      transform: translateX(20px);
+    }
+  }
+
+  &:hover &-Btn {
+    opacity: 1;
+  }
+
+  &-Link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 0;
+    border: none;
+  }
+}
