@@ -8,6 +8,7 @@
     @include flex(row);
     text-transform: uppercase;
     margin-right: 30px;
+    position: relative;
   }
 
   &-Icon {
@@ -19,4 +20,38 @@
   &-IconImg {
     width: 10px;
   }
+
+  &-OpenBtn {
+    display: none;
+  }
+
+  &-OpenBtn:checked ~ &-SubBlock {
+    display: block;
+  }
+  &-OpenBtn:not(:checked) ~ &-SubBlock {
+    display: none;
+  }
+
+  &-OpenBtnText {
+    cursor: pointer;
+    @include flex(row);
+  }
+
+  &-SubBlock {
+    text-align: left;
+    width: content-box;
+    padding: 1rem;
+    position: absolute;
+    top: 30px;
+    z-index: 5;
+    background-color: white;
+  }
+
+  &-FormItem {
+    display: block;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
 }
+
+

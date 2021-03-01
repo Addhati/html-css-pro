@@ -21,30 +21,6 @@
     width: 100%;
   }
 
-  .ProductCard {
-    width: 31.5%;
-    margin-top: 30px;
-    background-color: #F8F8F8;
-
-    &-Img {
-      object-fit: contain;
-    }
-
-    &-H6, &-Text {
-      margin-left: 15px;
-      margin-right: 20px;
-    }
-
-    &-H6 {
-      margin-top: 25px;
-      margin-bottom: 15px;
-    }
-
-    &-H6_pink {
-      color: $brandColor;
-    }
-  }
-
   &-Btn {
     display: block;
     width: 211px;
@@ -56,6 +32,12 @@
     margin: 45px auto 0;
     text-align: center;
     line-height: 40px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #FF6A6A;
+      color: white;
+    }
   }
 
 }
