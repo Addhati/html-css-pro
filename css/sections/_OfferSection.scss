@@ -3,6 +3,16 @@
   @include flex(row, space-between);
   margin-top: 65px;
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+  }
+
+
   &-Card {
     width: 30%;
     height: 260px;
@@ -11,6 +21,22 @@
     color: white;
     cursor: pointer;
     transition: 0.2s;
+
+    @media all {
+      @media (max-width: 1180px) {
+        height: 220px;
+      }
+
+      @media (max-width: 800px) {
+        height: 180px;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 240px;
+      }
+    }
 
     &:hover {
       transform: scale(1.05);
@@ -23,20 +49,36 @@
 
   &-Card_woman {
     background-image: url(../img/offer-woman.jpg);
+
+    @media(max-width: 800px) {
+      background-position: top center;
+    }
   }
 
   &-Card_man {
     background-image: url(../img/offer-man.jpg);
+
+    @media(max-width: 800px) {
+      background-position: top center;
+    }
   }
 
   &-Card_child {
     background-image: url(../img/offer-child.jpg);
+
+    @media(max-width: 800px) {
+      background-position: top center;
+    }
   }
 
-  &-Card_accessories{
+  &-Card_accessories {
     background-image: url(../img/offer-accessories.jpg);
     width: 100%;
     margin-top: 30px;
+
+    @media (max-width: 600px) {
+      margin-top: 0;
+    }
   }
 
 }

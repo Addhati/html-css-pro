@@ -4,6 +4,10 @@
   flex-grow: 1;
   margin-left: 30px;
 
+  &_product {
+    @include flex(row, center, center, nowrap);
+  }
+
   &-Block {
     @include flex(row);
     text-transform: uppercase;
@@ -35,6 +39,7 @@
   &-OpenBtnText {
     cursor: pointer;
     @include flex(row);
+    min-width: max-content;
   }
 
   &-SubBlock {

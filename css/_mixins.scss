@@ -1,5 +1,13 @@
-@mixin mainPadding{
-  padding: 0 calc(50% - 1140px / 2);
+@mixin mainPadding($y: 0) {
+  padding: $y calc(50% - 1140px / 2);
+}
+
+@mixin tabletPadding($y: 0) {
+  padding: $y calc(50% - 768px / 2);
+}
+
+@mixin mobilePadding($y: 0) {
+  padding: $y 5vw;
 }
 
 @mixin flex($direction: row, $justify: center, $align: center, $wrap: wrap) {

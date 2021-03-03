@@ -10,12 +10,21 @@ html {
   font-weight: 900;
   font-size: 48px;
   line-height: 50px;
+
+  @media all and (max-width: 1180px){
+    font-size: 44px;
+  }
+
 }
 
 .H2 {
   font-weight: 700;
   font-size: 32px;
   line-height: 35px;
+
+  @media all and (max-width: 1180px){
+    font-size: 24px;
+  }
 }
 
 .H3 {

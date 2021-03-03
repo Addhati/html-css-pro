@@ -1,0 +1,4 @@
+.CartSection {
+  @include mainPadding(96px);
+  @include flex(row, space-between);
+}

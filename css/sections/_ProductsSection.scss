@@ -4,6 +4,14 @@
   @include mainPadding();
   @include flex(column);
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+  }
 
   &-Header {
     text-align: center;

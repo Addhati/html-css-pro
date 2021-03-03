@@ -5,11 +5,22 @@
   position: relative;
   transition: 0.5s;
 
+  @media all {
+    @media (max-width: 1180px) {
+      width: 47%;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
   &:hover {
     transform: scale(1.03);
   }
 
   &-Img {
+    width: 100%;
     object-fit: contain;
     transition: filter .3s;
   }

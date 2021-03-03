@@ -1,0 +1,18 @@
+.BigSlider {
+  width: 100vw;
+  height: 777px;
+  background-image: url("../img/products/product_slide.jpg");
+  background-size: cover;
+  @include flex(row, space-between);
+
+
+  &-Arrow {
+    background-color: lightgray;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  &-IconImg {
+    width: 1rem;
+  }
+}

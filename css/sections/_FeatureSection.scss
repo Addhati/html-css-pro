@@ -4,10 +4,28 @@
   @include flex(row, space-between);
   @include mainPadding();
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+    @media(max-width: 600px) {
+      height: inherit;
+    }
+  }
+
   &-Block {
     width: 30%;
-    height: 100%;
     @include flex(column);
+
+    @media(max-width: 600px) {
+      padding: 7vw 15vw;
+      width: 100%;
+      height: max-content;
+    }
+
 
     &:hover .FeatureSection-Icon_сar {
       animation: ride 4s ease-in-out;

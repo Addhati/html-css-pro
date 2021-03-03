@@ -6,9 +6,22 @@
   @include mainPadding();
   @include flex(row, space-between);
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+  }
+
   &-Block {
     @include flex(column);
     width: 30%;
+
+    @media(max-width: 800px) {
+      width: 100%;
+    }
   }
 
   .ReviewCard {
@@ -19,9 +32,18 @@
   }
 
   .SubscribeBlock {
-    width: 45%;
+    width: 50%;
+
+    @media(max-width: 800px) {
+      width: 100%;
+    }
 
     &-H4 {
+      text-align: center;
+    }
+
+    &-H5 {
+      text-align: center;
     }
 
     &-Input {
@@ -34,6 +56,10 @@
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
       outline: none;
+
+      @media(max-width: 450px) {
+        width: 60%;
+      }
 
       &:focus {
         border: none;
