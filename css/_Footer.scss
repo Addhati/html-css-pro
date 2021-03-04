@@ -4,6 +4,18 @@
   @include mainPadding();
   @include flex(row, space-between);
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+    @media(max-width: 450px) {
+      justify-content: center;
+    }
+  }
+
   &-Copyright {
     color: white;
   }

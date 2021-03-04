@@ -4,6 +4,23 @@
   @include mainPadding();
   @include flex();
 
+  @media all {
+    @media (max-width: 1180px) {
+      height: 370px;
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+  }
+
+
+  &-Img {
+    @media all and (max-width: 1180px) {
+      height: 368px;
+    }
+  }
+
   &-Block {
     height: 100%;
     width: 50%;
@@ -12,6 +29,10 @@
 
   &-Block_left {
     justify-content: start;
+
+    @media(max-width: 600px) {
+      display: none;
+    }
   }
 
   &-Hgroup {
@@ -28,7 +49,9 @@
   }
 
   &-H2 {
-    display:block;
+    display: block;
+    width: max-content;
+
     &_pink {
       color: #F16D7F;
     }
@@ -64,6 +87,7 @@
     transform: none;
   }
 }
+
 @keyframes bounceInRight {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);

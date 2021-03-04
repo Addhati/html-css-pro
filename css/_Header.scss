@@ -4,6 +4,15 @@
   @include mainPadding();
   @include flex(row, space-between);
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+  }
+
   &-Block {
     @include flex();
   }
@@ -14,6 +23,11 @@
 
   .Cart {
     position: relative;
+
+    @media(max-width: 400px) {
+      display: none;
+    }
+
     &::after {
       position: absolute;
       top: -10px;

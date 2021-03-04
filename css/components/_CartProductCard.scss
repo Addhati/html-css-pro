@@ -1,0 +1,64 @@
+.CartProductCard {
+  background: white;
+  @include flex(row, start, center, nowrap);
+  margin-bottom: 40px;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.20);
+  width: 650px;
+  position: relative;
+
+  &-Img {
+    width: 262px;
+    height: 306px;
+  }
+
+  &-Text {
+    padding: 30px;
+    height: 306px;
+  }
+
+  &-H4 {
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  &-Property {
+    margin-bottom: 5px;
+    font-weight: 300;
+
+    &_pink {
+      color: #EF5B70;
+    }
+
+    &_box {
+      margin-left: 1rem;
+      border: 1px solid lightgray;
+      padding: 5px 10px;
+      font-size: 18px;
+    }
+  }
+
+  &-DeleteBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    transition: 1s;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  &-Btns {
+    @include flex(row, space-between);
+    margin-top: 70px;
+  }
+
+  &-Btn {
+    padding: 17px 40px;
+    border: 1px solid #A4A4A4;
+    text-transform: uppercase;
+    background: transparent;
+  }
+
+}
