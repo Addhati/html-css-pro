@@ -4,6 +4,15 @@
   height: 150px;
   background-color: #F8F3F4;
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+    }
+  }
+
   &-H4 {
     color: #F16D7F;
     font-weight: 400;

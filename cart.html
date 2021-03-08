@@ -42,7 +42,7 @@
             <h4 class="H4 Breadcrumbs-H4">SHOPPING CART</h4>
         </section>
         <main class="CartSection">
-            <section class="Cart-Products">
+            <section class="CartSection-Products">
                 <div class="CartProductCard">
                     <img class="CartProductCard-Img" src="img/products/Product_1.jpg" alt="">
                     <div class="CartProductCard-Text">
@@ -77,6 +77,26 @@
                     <button class="CartProductCard-Btn">CLEAR SHOPPING CART</button>
                     <button class="CartProductCard-Btn">CONTINUE SHOPPING</button>
                 </div>
+            </section>
+            <section class="CartSection-Info">
+                <form action="#" class="CartSection-Form">
+                    <label class="H6 CartSection-InputLabel" for="CartSection-InputCountry">SHIPPING ADRESS</label>
+                    <input id="CartSection-InputCountry" class="CartSection-Input" type="text" placeholder="Country"
+                           required>
+                    <label><input class="CartSection-Input" type="text" placeholder="State" required></label>
+                    <label> <input class="CartSection-Input" type="number" placeholder="Postcode / Zip" required>
+                    </label>
+                    <button class="CartSection-Btn">GET A QUOTE</button>
+
+                    <div class="CartSection-Price">
+                        <p class="CartSection-PriceSubTotal">SUB TOTAL <span class="CartSection-PriceSubTotal_price">$900</span></p>
+                        <h6 class="H6 CartSection-PriceTotal">GRAND TOTAL <span class="CartSection-PriceTotal_price">$900</span></h6>
+                        <input class="CartSection-SubmitBtn" type="submit" value="PROCEED TO CHECKOUT">
+                    </div>
+
+                    <br><br><br>
+
+                </form>
             </section>
         </main>
         <section class="SubscribeSection">
