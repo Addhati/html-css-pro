@@ -1,0 +1,46 @@
+.BurgerMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 235px;
+  height: 100vh;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+  display: none;
+  padding: 35px;
+
+  &_active {
+    @include flex(column, start, start)
+  }
+
+  &-CloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-Title {
+    font-weight: 700;
+  }
+
+  &-Item {
+    font-weight: 400;
+    color: #F16D7F;
+    margin-top: 25px;
+  }
+
+  &-SubList {
+    padding-left: 20px !important;
+  }
+
+  &-SubItem {
+    color: #6F6E6E;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+}
+

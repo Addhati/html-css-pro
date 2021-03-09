@@ -6,6 +6,12 @@
 
   &_product {
     @include flex(row, center, center, nowrap);
+
+    @media all {
+      @media(max-width: 600px) {
+        display: none;
+      }
+    }
   }
 
   &-Block {
@@ -32,6 +38,7 @@
   &-OpenBtn:checked ~ &-SubBlock {
     display: block;
   }
+
   &-OpenBtn:not(:checked) ~ &-SubBlock {
     display: none;
   }
