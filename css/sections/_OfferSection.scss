@@ -21,6 +21,8 @@
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media all {
       @media (max-width: 1180px) {
@@ -29,12 +31,16 @@
 
       @media (max-width: 800px) {
         height: 180px;
+        background-position: top center;
       }
 
       @media (max-width: 600px) {
         width: 100%;
         margin-bottom: 30px;
         height: 240px;
+        background-position: top left;
+        @include flex(column, center, end);
+        padding-right: 30px;
       }
     }
 
@@ -49,26 +55,14 @@
 
   &-Card_woman {
     background-image: url(../img/offer-woman.jpg);
-
-    @media(max-width: 800px) {
-      background-position: top center;
-    }
   }
 
   &-Card_man {
     background-image: url(../img/offer-man.jpg);
-
-    @media(max-width: 800px) {
-      background-position: top center;
-    }
   }
 
   &-Card_child {
     background-image: url(../img/offer-child.jpg);
-
-    @media(max-width: 800px) {
-      background-position: top center;
-    }
   }
 
   &-Card_accessories {
