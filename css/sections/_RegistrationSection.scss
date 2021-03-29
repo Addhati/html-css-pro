@@ -4,12 +4,42 @@
   padding-top: 65px;
   padding-bottom: 95px;
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding();
+      padding-top: 40px;
+      padding-bottom: 95px;
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding();
+      @include flex(column, center, start);
+      padding-top: 40px;
+      padding-bottom: 95px;
+    }
+  }
+
   .BonusesArticle {
     width: 55%;
+
+    @media all {
+      @media (max-width: 1180px) {
+        width: 45%;
+      }
+      @media (max-width: 800px) {
+        margin-top: 40px;
+        width: 360px;
+      }
+    }
   }
 
   .BonusesArticle-H4, .BonusesArticle-Text, .BonusesArticle-List {
     font-weight: 300;
+
+    @media all {
+      @media (max-width: 1180px) {
+       font-size: 16px;
+      }
+    }
   }
 
   .BonusesArticle-Text {

@@ -20,6 +20,7 @@
 
   &-CheckBlock {
     margin: 35px 0;
+    width: max-content;
   }
 
   &-CheckboxLabel {
@@ -28,6 +29,7 @@
   }
 
   &-Clarification {
+    width: 320px;
     margin: 15px 0 40px;
     color: #B1B1B1;
   }
@@ -37,6 +39,7 @@
     padding: 15px 30px;
     background-color: #F16D7F;
     color: white;
+    width: max-content;
   }
 
   &-Icon {

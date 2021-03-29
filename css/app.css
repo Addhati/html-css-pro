@@ -140,7 +140,7 @@ html {
 .Header .Cart {
   position: relative;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .Header .Cart {
     display: none;
   }
@@ -229,6 +229,16 @@ html {
   flex-wrap: wrap;
   height: 150px;
   background-color: #F8F3F4;
+}
+@media (max-width: 1180px) {
+  .Breadcrumbs {
+    padding: 0 calc(50% - 768px / 2);
+  }
+}
+@media (max-width: 800px) {
+  .Breadcrumbs {
+    padding: 0 5vw;
+  }
 }
 .Breadcrumbs-H4 {
   color: #F16D7F;
@@ -442,12 +452,14 @@ html {
 }
 .RegistrationForm-CheckBlock {
   margin: 35px 0;
+  width: max-content;
 }
 .RegistrationForm-CheckboxLabel {
   font-size: 11px;
   margin-right: 1rem;
 }
 .RegistrationForm-Clarification {
+  width: 320px;
   margin: 15px 0 40px;
   color: #B1B1B1;
 }
@@ -456,6 +468,7 @@ html {
   padding: 15px 30px;
   background-color: #F16D7F;
   color: white;
+  width: max-content;
 }
 .RegistrationForm-Icon {
   margin-left: 20px;
@@ -557,7 +570,7 @@ html {
   flex-wrap: nowrap;
   margin-bottom: 40px;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 3px rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.2);
-  width: 650px;
+  width: 100%;
   position: relative;
 }
 .CartProductCard-Img {
@@ -836,6 +849,8 @@ html {
   color: white;
   cursor: pointer;
   transition: 0.2s;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 1180px) {
   .OfferSection-Card {
@@ -845,6 +860,7 @@ html {
 @media (max-width: 800px) {
   .OfferSection-Card {
     height: 180px;
+    background-position: top center;
   }
 }
 @media (max-width: 600px) {
@@ -852,6 +868,13 @@ html {
     width: 100%;
     margin-bottom: 30px;
     height: 240px;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    padding-right: 30px;
   }
 }
 .OfferSection-Card:hover {
@@ -863,26 +886,11 @@ html {
 .OfferSection-Card_woman {
   background-image: url(../img/offer-woman.jpg);
 }
-@media (max-width: 800px) {
-  .OfferSection-Card_woman {
-    background-position: top center;
-  }
-}
 .OfferSection-Card_man {
   background-image: url(../img/offer-man.jpg);
 }
-@media (max-width: 800px) {
-  .OfferSection-Card_man {
-    background-position: top center;
-  }
-}
 .OfferSection-Card_child {
   background-image: url(../img/offer-child.jpg);
-}
-@media (max-width: 800px) {
-  .OfferSection-Card_child {
-    background-position: top center;
-  }
 }
 .OfferSection-Card_accessories {
   background-image: url(../img/offer-accessories.jpg);
@@ -1236,11 +1244,46 @@ html {
   padding-top: 65px;
   padding-bottom: 95px;
 }
+@media (max-width: 1180px) {
+  .RegistrationSection {
+    padding: 0 calc(50% - 768px / 2);
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+}
+@media (max-width: 800px) {
+  .RegistrationSection {
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+}
 .RegistrationSection .BonusesArticle {
   width: 55%;
 }
+@media (max-width: 1180px) {
+  .RegistrationSection .BonusesArticle {
+    width: 45%;
+  }
+}
+@media (max-width: 800px) {
+  .RegistrationSection .BonusesArticle {
+    margin-top: 40px;
+    width: 360px;
+  }
+}
 .RegistrationSection .BonusesArticle-H4, .RegistrationSection .BonusesArticle-Text, .RegistrationSection .BonusesArticle-List {
   font-weight: 300;
+}
+@media (max-width: 1180px) {
+  .RegistrationSection .BonusesArticle-H4, .RegistrationSection .BonusesArticle-Text, .RegistrationSection .BonusesArticle-List {
+    font-size: 16px;
+  }
 }
 .RegistrationSection .BonusesArticle-Text {
   margin: 20px 0;
@@ -1258,8 +1301,75 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.CartSection-Products {
+  width: 50%;
+}
+.CartSection-Info {
+  width: 40%;
+}
+.CartSection-InputLabel {
+  font-weight: 300;
+}
+.CartSection-Input {
+  width: 360px;
+  height: 45px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #A4A4A4;
+}
+.CartSection-Input::placeholder {
+  color: #222222;
+}
+.CartSection-Btn {
+  width: 100px;
+  height: 34px;
+  background: transparent;
+  font-size: 11px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 1px solid #A4A4A4;
+  color: #4A4A4A;
+  margin-top: 25px;
+}
+.CartSection-Price {
+  width: 360px;
+  height: 214px;
+  background: #F5F3F3;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 34px;
+}
+.CartSection-PriceSubTotal {
+  font-size: 11px;
+  align-self: end;
+  margin-bottom: 12px;
+}
+.CartSection-PriceSubTotal_price {
+  margin-left: 2rem;
+}
+.CartSection-PriceTotal {
+  font-weight: 300;
+  align-self: end;
+}
+.CartSection-PriceTotal_price {
+  margin-left: 2rem;
+  color: #F16D7F;
+}
+.CartSection-SubmitBtn {
+  width: 275px;
+  height: 50px;
+  background: #F16D7F;
+  border: none;
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
