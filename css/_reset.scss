@@ -24,6 +24,22 @@ dd {
   padding: 0;
 }
 
+.Body_scrollHidden {
+  overflow: hidden;
+}
+
+.BodyOverlay_active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.8);
+  filter: brightness(30%);
+}
+
 a {
   text-decoration: none;
   color: black;

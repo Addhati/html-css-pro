@@ -1,8 +1,12 @@
 .PromoSection {
-  height: 764px;
+  height: 765px;
   background-color: #F1E4E6;
   @include mainPadding();
   @include flex();
+
+  &_overlay {
+    filter: brightness(30%);
+  }
 
   @media all {
     @media (max-width: 1180px) {

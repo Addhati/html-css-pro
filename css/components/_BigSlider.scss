@@ -3,8 +3,8 @@
   height: 777px;
   background-image: url("../img/products/product_slide.jpg");
   background-size: cover;
+  background-position: center center;
   @include flex(row, space-between);
-
 
   &-Arrow {
     background-color: lightgray;

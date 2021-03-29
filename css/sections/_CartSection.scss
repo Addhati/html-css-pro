@@ -2,13 +2,64 @@
   @include mainPadding(96px);
   @include flex(row, space-between, start);
 
+  @media all {
+    @media (max-width: 1180px) {
+      @include tabletPadding(96px);
+      @include flex(column, center, center);
+    }
+    @media(max-width: 800px) {
+      @include mobilePadding(60px);
+    }
+    @media(max-width: 600px) {
+      height: inherit;
+    }
+  }
+
   &-Products {
     width: 50%;
+
+    @media all {
+      @media (max-width: 1180px) {
+        @include tabletPadding();
+        width: 100%;
+        margin-bottom: 65px;
+      }
+    }
   }
 
   &-Info {
     width: 40%;
+
+    @media all {
+      @media (max-width: 1180px) {
+        width: 100%;
+      }
+    }
   }
+
+  &-Form {
+    @media all {
+      @media (max-width: 1180px) {
+        @include flex(row, space-between);
+        width: 100%;
+      }
+      @media(max-width: 800px) {
+        @include flex(column);
+      }
+    }
+  }
+
+  &-FormBlock {
+    @media all {
+      @media (max-width: 1180px) {
+        width: 40%;
+      }
+      @media(max-width: 800px) {
+        width: 50%;
+      }
+    }
+  }
+
 
   &-InputLabel {
     font-weight: 300;

@@ -5,6 +5,19 @@
   border: 1px solid lightgray;
   margin: -50px auto 0;
   background: white;
+  text-align: center;
+
+  @media all {
+    @media (max-width: 1180px) {
+      width: 770px;;
+    }
+    @media(max-width: 800px) {
+      width: 80%;;
+    }
+    @media(max-width: 600px) {
+      height: inherit;
+    }
+  }
 
   &-H6 {
     color: #F16D7F;
@@ -34,6 +47,15 @@
       width: 640px;
       border-bottom: 1px solid lightgray;
       margin: 65px auto 55px;
+
+      @media all {
+        @media(max-width: 800px) {
+          width: 300px;
+        }
+        @media(max-width: 500px) {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -41,6 +63,11 @@
     width: 50%;
     text-align: center;
     margin: 50px 0 32px;
+    @media all {
+      @media(max-width: 800px) {
+        width: 100%;
+      }
+    }
   }
 
   &-Btn {
@@ -49,5 +76,11 @@
     background: transparent;
     border: 1px solid #FF6A6A;
     color: #FF6A6A;
+
+    @media all {
+      @media(max-width: 600px) {
+        margin-top: 20px;
+      }
+    }
   }
 }

@@ -9,6 +9,11 @@
   &-Img {
     width: 262px;
     height: 306px;
+
+    @media (max-width: 600px) {
+      width: 30%;
+      height: auto;
+    }
   }
 
   &-Text {
